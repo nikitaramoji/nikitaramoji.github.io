@@ -1,0 +1,189 @@
+#particles-js {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-image: url('');
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body{
+	width:100%;
+	height:100%;
+	margin: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.full-pg {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.half-pg {
+	display: inline-block;
+	margin: 0;
+	width: 50%;
+	height: 100%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.tab {
+	width: 80%;
+	height: 80%;
+	position: relative;
+	display: inline-block;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5vw;
+	top: 10%;
+	left: 10%;
+	z-index: 10;
+}
+
+.project {
+	width: 75%;
+	height: 75%;
+	background-color: #000;
+	display: inline-block;
+	position: relative;
+	left: 8.5%;
+	top: 12.5%;
+}
+
+h1 {
+	text-align: center;
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5em;
+	margin: 0;
+	text-transform: uppercase;
+	top: 45%;
+}
+
+h2 {
+	text-align: center;
+	margin: 0;
+	position: relative;
+	font-size: 2.3em;
+	top: 45%;
+}
+
+#arrow-right, #arrow-left {
+	height: 5vh;
+	width: 5vh;
+	border: solid black;
+	border-width: 0 1px 1px 0;
+	display: inline-block;
+	padding: 3px;
+}
+
+#arrow-right {
+	transform: rotate(-45deg);
+}
+
+#arrow-left {
+	transform: rotate(135deg);
+}
+
+#prev {
+	float: left;
+	top: 45%;
+	left: 3.5%;
+	position: relative;
+	display: inline-block;
+}
+
+#next {
+	float: right;
+	top: 45%;
+	right: 3.5%;
+	position: relative;
+	display: inline-block;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/*------NAV STYLES-----*/
+
+nav {
+	display: block;
+	padding: 3vh 0vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+	background-color: rgba(255,255,255,0.5);
+}
+
+nav > a {
+	font-size: 1em;
+	margin-left: 3vw;
+	text-decoration: none;
+	color: black;
+	position: relative;
+}
+
+nav > a:before {
+	visibility: hidden;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+nav > a.notactive:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+nav > a.activelink:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+  	transform: scaleX(1);
+}
+
+#contact {
+	margin: 0;
+	display: inline-block;
+	float: right;
+}
+
+#contact a {
+	margin-right: 3vw;
+	font-size: 1.3em;
+	color: black;
+	text-decoration: none;
+}
