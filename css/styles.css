@@ -127,23 +127,6 @@ h2 {
 	top: 45%;
 }
 
-#arrow-right, #arrow-left {
-	height: 5vh;
-	width: 5vh;
-	border: solid black;
-	border-width: 0 1px 1px 0;
-	display: inline-block;
-	padding: 3px;
-}
-
-#arrow-right {
-	transform: rotate(-45deg);
-}
-
-#arrow-left {
-	transform: rotate(135deg);
-}
-
 #prev {
 	float: left;
 	top: 45%;
