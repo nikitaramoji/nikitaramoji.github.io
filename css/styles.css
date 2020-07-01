@@ -25,6 +25,18 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+li {
+  font-size: 0.9em;
+}
+
 .full-pg {
 	width: 100%;
 	height: 100%;
@@ -63,7 +75,7 @@ body {
 }
 
 .content-pg {
-  font-size: 2em;
+  font-size: 1.5em;
   display: inline-block;
   margin: 0;
   position: absolute;
